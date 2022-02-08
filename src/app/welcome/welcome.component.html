@@ -11,8 +11,9 @@
     <h1 style="font-family: cursive;text-align:center">GOOD LUCK</h1>
     <div class="name col-md-4 my-3">
         <label for="">ENTER YOUR NAME:</label>
-        <input type="text" class="form-control">
-        <!-- routerLink here allows the button click to send you to the 1st question (question path) -->
-        <button class="btn btn-primary btn-lg" routerLink="/question">START THE QUIZ</button>
+        <input #name type="text" class="form-control">
     </div>
+    
+     <!-- routerLink here allows the button click to send you to the 1st question (question path) -->
+     <button class="btn btn-primary btn-lg" routerLink="/question" (click)="startQuiz()">START THE QUIZ</button>
 </div>
