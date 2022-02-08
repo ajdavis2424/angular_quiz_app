@@ -6,5 +6,5 @@ ng g c header
 ng serve
 
 <!-- Bootstrap -->
-
+styling
 <!-- FontAewsoem -->

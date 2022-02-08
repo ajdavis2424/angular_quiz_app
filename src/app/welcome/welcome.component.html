@@ -1,1 +1,18 @@
-<p>welcome works!</p>
+<div class="container bg-light py-5">
+    <h1 class="display-5 fw-bold">Welcome To Angular Quiz App</h1>
+    <p class=" col-md-8 fs-4"> This quiz will contain 9 questions. each question is worth 10 points. Each question will be based of the Angular documentation!</p>
+    <h4>Rules:</h4>
+    <ol>
+        <li>Correct question is worth 10 points</li>
+        <li>Incorrect questions cost you 10 points</li>
+        <li> You will have 10 seconds to answer each question</li>
+        <li>If you try to reset the page, it will reset your quiz!!</li>
+    </ol>
+    <h1 style="font-family: cursive;text-align:center">GOOD LUCK</h1>
+    <div class="name col-md-4 my-3">
+        <label for="">ENTER YOUR NAME:</label>
+        <input type="text" class="form-control">
+        <!-- routerLink here allows the button click to send you to the 1st question (question path) -->
+        <button class="btn btn-primary btn-lg" routerLink="/question">START THE QUIZ</button>
+    </div>
+</div>
