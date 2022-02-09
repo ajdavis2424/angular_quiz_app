@@ -1,5 +1,5 @@
 # AngularQuizApp
-This is an Code Quiz App displaying my Agular and Typescript skills!
+This is an Code Quiz App displaying my Angular and Typescript skills! I also used bootstrap to cut down on time spent styling.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
 ## Link to deployed website:
