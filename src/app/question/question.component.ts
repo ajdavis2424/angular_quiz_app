@@ -49,10 +49,15 @@ answer(currentQno:number,option:any){
     this.points+=10;
     this.correctAnswer++;
     this.currentQuestion++
+    this.resetCounter();
+    this.getProgressPercent();
+  
   } else{
-    this.points-=10;
     this.currentQuestion++;
     this.incorrectAnswer++;
+    this.resetCounter();
+    this.getProgressPercent();
+    this.points-=10;
   }
 }
 
@@ -88,10 +93,12 @@ answer(currentQno:number,option:any){
     this.points=0;
     this.counter=60;
     this.currentQuestion=0;
+    this.progress="0";
   }
 
   // PROGRESS BAR PERCENT METHOD
   getProgressPercent(){
-    this.progress = ((this.currentQuestion/this.questionList.length)*100).toString()
+    this.progress = ((this.currentQuestion/this.questionList.length)*100).toString();
+    return this.progress;
   }
 }
