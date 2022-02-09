@@ -18,6 +18,7 @@ export class QuestionComponent implements OnInit {
   incorrectAnswer:number=0;
   interval$:any;
   progress:string="0";
+  isQuizCompleted : boolean = false;
 
   constructor(private questionService : QuestionService) { }
 
@@ -44,19 +45,28 @@ this.questionService.getQuestionJson()
   }
 
 // ANSWER METHOD
-answer(currentQno:number,option:any){
-  if(option.correct){
+  answer(currentQno: number,option:any){
+    if(currentQno=== this.questionList.length){
+      this.isQuizCompleted=true;
+      this.stopCounter();
+    }
+    if(option.correct){
     this.points+=10;
     this.correctAnswer++;
+    setTimeout(() => {
     this.currentQuestion++
     this.resetCounter();
     this.getProgressPercent();
+    }, 1000);
+    
   
   } else{
+    setTimeout(() => {
     this.currentQuestion++;
     this.incorrectAnswer++;
     this.resetCounter();
     this.getProgressPercent();
+    }, 1000);
     this.points-=10;
   }
 }
