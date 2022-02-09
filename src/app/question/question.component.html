@@ -23,7 +23,7 @@
         </div>
         <!-- Progress bar from bootstrap! -->
         <div class="progress mb-3">
-            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar progress-bar-striped bg-success" role="progressbar" [ngStyle]="{'width':progress+'%'}" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
           </div>
           
           <!-- PRIMARY Questions Here -->
@@ -46,11 +46,11 @@
             </ol>
           </div>
           
-          <!-- Answer Buttons -->
+          <!-- Answer Buttons w/(click)Events-->
           <div class="d-flex justify-content-between">
-            <button [disabled]="currentQuestion===0"  class="btn" (click)="nextQuestion()"><i class="fa-solid text-primary fa-chevron-left fa-3x"></i></button>
-            <button class="btn"> <i class="fa-solid text-primary fa-arrows-rotate fa-3x"></i> </button>
-            <button class="btn" (click)="previousQuestion()"><i class="fa-solid text-primary fa-chevron-right fa-3x"></i></button>
+            <button [disabled]="currentQuestion===0"  class="btn" (click)="previousQuestion()"><i class="fa-solid text-primary fa-chevron-left fa-3x"></i></button>
+            <button class="btn" (click)="resetQuiz()" > <i class="fa-solid text-primary fa-arrows-rotate fa-3x"></i> </button>
+            <button class="btn" (click)="nextQuestion()" ><i class="fa-solid text-primary fa-chevron-right fa-3x"></i></button>
           </div>
     </div>
 </div>
