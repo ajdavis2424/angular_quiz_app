@@ -2,7 +2,8 @@
 This is an Code Quiz App displaying my Agular and Typescript skills!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
 
-## Link to deployed website
+## Link to deployed website:
+
 
 
 ![Screen Shot 2022-02-08 at 11 50 57 PM](https://user-images.githubusercontent.com/85590236/153124353-b4e24f39-b652-4ea1-a7ab-26953092ea8e.png)
