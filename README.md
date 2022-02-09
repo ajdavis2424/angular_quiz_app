@@ -1,14 +1,16 @@
 # AngularQuizApp
-This is an Code Quiz App displaying my ANgular and Typescript skills!
-
+This is an Code Quiz App displaying my Agular and Typescript skills!
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.2.
+
+## Link to deployed website
+
+
+![Screen Shot 2022-02-08 at 11 50 57 PM](https://user-images.githubusercontent.com/85590236/153124353-b4e24f39-b652-4ea1-a7ab-26953092ea8e.png)
+![Screen Shot 2022-02-08 at 11 52 31 PM](https://user-images.githubusercontent.com/85590236/153124365-9d6425d6-627e-414c-86c9-fd36207aac3d.png)
 
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Link to deployed website
-
 
 ## Code scaffolding
 
